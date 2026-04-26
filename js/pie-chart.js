@@ -1,31 +1,30 @@
-//  // Consistent color scale for both charts
-//     const color = d3.scaleOrdinal()
-//         .range(["#ff0000", "#ec6129", "#7e0808", "#6d6d6d", "#cc6767", "#2b0b0b"]);
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { // Listen for season select
+    // Pie chart dimensions
     const width = 400, height = 400, margin = 40;
     const radius = Math.min(width, height) / 2 - margin;
     
-    // 1. Create a single tooltip div for the whole page
+    // Create single tooltip div for the whole page
     const tooltip = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
 
     const color = d3.scaleOrdinal()
         .range([
-            "#ff0000", // Pure Red (Matt)
+            "#ff0000", // Pure Red
             "#ec6129", // Orange-Red
             "#7e0808", // Dark Blood Red
-            "#6d6d6d", // Steel Grey (Foggy/Systems)
+            "#6d6d6d", // Steel Grey
             "#cc6767", // Rose Red
             "#2b0b0b", // Deep Black
             "#5e2d2d", // Brownish Red
             "#a50026", // Deep Crimson
             "#d73027", // Brick Red
-            "#fdae61", // Golden (City lights)
-            "#313695", // Deep Navy (Skyline)
+            "#fdae61", // Golden
+            "#313695", // Deep Navy
             "#4575b4"  // Steel Blue
         ]);
+    // Load in json data
     d3.json("./script data/appearances.json").then(data => {
         
         function initPieChart(containerId, dropdownId, initialPrefix) {
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .append("g")
                 .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-            function updatePie(prefix) {
+            function updatePie(prefix) { // Update pie chart with season select
                 const filteredData = Object.keys(data)
                     .filter(key => key.startsWith(prefix))
                     .map(key => ({
@@ -47,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const pie = d3.pie().value(d => d.value);
                 const data_ready = pie(filteredData);
                 const arc = d3.arc().innerRadius(0).outerRadius(radius);
-                const labelArc = d3.arc().innerRadius(radius * 0.8).outerRadius(radius * 0.8);
+                const labelArc = d3.arc().innerRadius(radius * 0.8).outerRadius(radius * 0.8); // keep character names closer to edge for readability
 
-                // 2. Modified Slices with Tooltip Listeners
+                // Slices with Tooltip Listeners
                 svg.selectAll('path')
                     .data(data_ready)
                     .join("path")
@@ -60,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     .style("stroke-width", "2px")
                     .style("opacity", 0.8);
 
-                // Re-select paths to attach non-transitioning events
+                // Re-select paths
                 svg.selectAll('path')
-                    .on("mouseover", function(event, d) {
+                    .on("mouseover", function(event, d) { // Tooltip box
                         d3.select(this).style("opacity", 1).style("stroke", "#fff");
                         tooltip.transition().duration(200).style("opacity", 1);
                         tooltip.html(`<strong>${d.data.name}</strong><br/>${d.data.value} Episodes`)
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         tooltip.transition().duration(300).style("opacity", 0);
                     });
 
-                // Labels update logic remains the same
+                // Character label update
                 svg.selectAll('text')
                     .data(data_ready)
                     .join("text")
@@ -92,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updatePie(initialPrefix);
             d3.select(dropdownId).on("change", (event) => updatePie(event.target.value));
         }
-
+        // Default pie chart selection
         initPieChart("#netflix-pie-chart-container", "#netflix-pie-dropdown", "net_s1");
         initPieChart("#ba-pie-chart-container", "#ba-pie-dropdown", "ba_s1");
     });
