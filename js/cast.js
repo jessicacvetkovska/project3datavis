@@ -1,4 +1,4 @@
-// 1. Organize your data
+// Starring cast data (no prefix = netflix, ba = born again)
 const castData = {
     "s1": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt.jpg" },
@@ -59,7 +59,7 @@ const castData = {
     ]
 };
 
-// 2. The function to render cards
+// Renders cast cards
 function renderCast(seasonKey, wrapperID) {
     const data = castData[seasonKey];
     const wrapper = d3.select(wrapperID);
@@ -69,14 +69,14 @@ function renderCast(seasonKey, wrapperID) {
         .join(
             enter => {
                 const card = enter.append("div").attr("class", "character-card");
-                
+                // Set up image
                 card.append("div").attr("class", "character-image-placeholder")
                     .append("img")
                     .attr("src", d => d.img)
                     .style("width", "100%")
                     .style("height", "100%")
                     .style("object-fit", "cover");
-
+                // Set up character and actor
                 const info = card.append("div").attr("class", "character-info");
                 info.append("div").attr("class", "character-name").text(d => d.name);
                 info.append("div").attr("class", "actor-name").text(d => d.actor);
@@ -92,7 +92,7 @@ function renderCast(seasonKey, wrapperID) {
         );
 }
 
-// Listeners for each independent dropdown
+// Listeners for both dropdowns
 d3.select("#netflix-dropdown").on("change", function(event) {
     renderCast(event.target.value, "#netflix-cast-wrapper");
 });
