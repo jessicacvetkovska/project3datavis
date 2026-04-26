@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "#313695", // Deep Navy (Skyline)
             "#4575b4"  // Steel Blue
         ]);
-    d3.json("appearances.json").then(data => {
+    d3.json("./script data/appearances.json").then(data => {
         
         function initPieChart(containerId, dropdownId, initialPrefix) {
             const svg = d3.select(containerId)
