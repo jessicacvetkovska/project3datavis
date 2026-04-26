@@ -54,7 +54,7 @@ const castData = {
         { name: "Benjamin Poindexter / Bullseye", actor: "Wilson Bethel", img: "./images/bullseye2.png" },
         { name: "Buck Cashman", actor: "Arty Froushan", img: "./images/buck.jpg" },
         { name: "BB Urich", actor: "Genneya Walton", img: "./images/bb_urich.jpg" },
-        { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa.jpg" },
+        { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
         { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" }
     ]
 };
