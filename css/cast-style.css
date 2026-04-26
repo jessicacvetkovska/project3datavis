@@ -12,7 +12,7 @@
 }
 #cast-wrapper {
     display: flex;
-    min-height: 350px; /* Ensures the area exists even if empty */
+    min-height: 350px; /* Keeps area available even if empty */
     width: 100%;
     overflow-x: auto;
     padding: 20px 0;
@@ -23,7 +23,7 @@
     gap: 20px;       /* Space between cards */
     padding: 10px 0;
     scrollbar-width: thin;
-    scrollbar-color: #ff0000 #000; /* Red scrollbar for Firefox */
+    scrollbar-color: #ff0000 #000; /* Red */
 }
 
 /* Custom Scrollbar for Chrome/Safari */
@@ -36,7 +36,7 @@
 }
 
 .character-card {
-    flex: 0 0 200px; /* Crucial: prevents cards from shrinking */
+    flex: 0 0 200px; /* Prevents cards from shrinking */
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 0, 0, 0.3);
     border-radius: 8px;
@@ -111,7 +111,7 @@
 }
 
 #netflix-stats-section, #ba-stats-section {
-    width: 45%; /* Total 90% to allow for spacing */
+    width: 45%; /* Total 90% for spacing */
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -137,15 +137,14 @@
     height: 400px;
 }
 
-/* Ensure the pie labels are readable */
+/* Keeps the pie labels readable */
 .pie-label {
     fill: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     pointer-events: none;
 }
-
-/* Update cast-style.css */
+/*Tooltip Pie Chart*/
 .tooltip {
     position: absolute;
     text-align: center;
