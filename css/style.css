@@ -1,0 +1,123 @@
+.layout-wrapper {
+    position: relative; 
+    max-width: 900px;
+    margin: 250px auto 0 auto; /* This 60px is our "top margin" workspace */
+}
+
+body {
+    background: url('../Project 3/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#viz-container {
+    margin-top: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.70);
+    border-top: 10px solid #ff0000;
+    
+    /* CHANGE 1: Use min-height so it starts at screen size but can grow */
+    min-height: calc(100vh - 300px); 
+    height: auto; 
+    
+    /* CHANGE 2: Use Flexbox to stack text naturally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px; /* Provides a "safe zone" for your text */
+    box-sizing: border-box;
+}
+
+.overlooking-character {
+    position: absolute;
+    z-index: 10;
+    
+    /* 1. Move to the top margin area */
+    top: -0px; /* Adjust this to sit them higher or lower in the margin */
+    
+    /* 2. Center the character horizontally */
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    /* 3. Scale appropriately */
+    height: 300px; /* Small enough to fit in the margin, or larger to overlap */
+    width: auto;
+    
+    pointer-events: none; /* Essential so they don't block D3 clicks */
+    
+    /* Optional: matches the red glow of your cityscape image */
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+}
+
+.netflix-logo {
+    position: absolute;
+    z-index: 10;
+    
+    /* 1. Move to the top margin area */
+    top: 120px; /* Adjust this to sit them higher or lower in the margin */
+    
+    /* 2. Center the character horizontally */
+    left: 25%;
+    transform: translateX(-50%); 
+    
+    /* 3. Scale appropriately */
+    height: 100px; /* Small enough to fit in the margin, or larger to overlap */
+    width: auto;
+    
+    pointer-events: none; /* Essential so they don't block D3 clicks */
+}
+
+.born-again-logo {
+    position: absolute;
+    z-index: 10;
+    
+    /* 1. Move to the top margin area */
+    top: 120px; /* Adjust this to sit them higher or lower in the margin */
+    
+    /* 2. Center the character horizontally */
+    right: 10%;
+    transform: translateX(-50%); 
+    
+    /* 3. Scale appropriately */
+    height: 100px; /* Small enough to fit in the margin, or larger to overlap */
+    width: auto;
+    
+    pointer-events: none; /* Essential so they don't block D3 clicks */
+}
+
+.title{
+    position:relative;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+}
+
+.authors{
+    position:relative;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+}
+
+.description{
+    position:relative;
+    margin: 100px 30px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+
+}

@@ -1,0 +1,162 @@
+.cast-section {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.section-header {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid #ff0000;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#cast-wrapper {
+    display: flex;
+    min-height: 350px; /* Ensures the area exists even if empty */
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+.cast-scroll-wrapper {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;       /* Space between cards */
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 #000; /* Red scrollbar for Firefox */
+}
+
+/* Custom Scrollbar for Chrome/Safari */
+.cast-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.cast-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+}
+
+.character-card {
+    flex: 0 0 200px; /* Crucial: prevents cards from shrinking */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0000;
+}
+
+.character-image-placeholder {
+    width: 100%;
+    height: 250px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+}
+
+.character-info {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.character-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.actor-name {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.season-selector-container {
+    margin-bottom: 20px; /* Space between dropdown and character cards */
+    display: block;      /* Forces it to its own line underneath the header */
+}
+
+.custom-dropdown {
+    background-color: #960606;
+    color: white;
+    padding: 10px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-dropdown:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.custom-dropdown option {
+    background-color: black;
+    color: white;
+}
+
+.stats-wrapper {
+    display: flex;
+    flex-direction: row; /* Places charts side-by-side */
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#netflix-stats-section, #ba-stats-section {
+    width: 45%; /* Total 90% to allow for spacing */
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+#netflix-pie-chart-container, #ba-pie-chart-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.stats-header {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid #ff0000;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#pie-chart-container {
+    width: 100%;
+    height: 400px;
+}
+
+/* Ensure the pie labels are readable */
+.pie-label {
+    fill: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+/* Update cast-style.css */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: 1px solid #ff0000; /* Red border to match city glow */
+    border-radius: 4px;
+    pointer-events: none; /* Prevents tooltip from flickering */
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
