@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+
     <!-- Container for all d3 visuallizations -->
     <div id="viz-container">
         <!-- title, authors, description -->
@@ -75,6 +76,7 @@
                 <div id="ba-pie-chart-container"></div>
             </div>
         </div>
+            <div id="my-chord-div" style="width: 560px; height: 560px; margin: 0 auto;"></div>
         </div>
     </div>
 
@@ -88,24 +90,22 @@
     <script src="js/d3.v6.min.js"></script>
     <script src="js/cast.js"></script>
     <script src="js/pie-chart.js"></script>
+    <script src="js/chord_graph.js"></script>
+
+    <script>
+        //plan here is to hardcode the info for season 1, 2, and 3. Potentially Born Again.
+      drawChordDiagram({
+        container: "#my-chord-div",
+        labels: ["Matt", "Foggy", "Karen", "Fisk"],
+        matrix: [
+          [0, 9, 9, 4],
+          [9, 0, 10, 2],
+          [9, 10, 0, 2],
+          [4, 2,  2, 0],
+        ],
+        colors: ["#E53935", "#1E88E5", "#FB8C00", "#8E24AA"],
+        title: "Season One Episode Co-Appearances",
+      });
+    </script>
 </body>
 </html>
-
-<!--from chord_diagram import draw_chord
-import matplotlib.pyplot as plt
-
-fig, ax = plt.subplots(figsize=(10, 10), facecolor="#0D0D0D")
-
-draw_chord(
-    ax,
-    labels=["Matt", "Foggy", "Karen", "Fisk"],
-    matrix=[
-        [0, 9, 9, 4],
-        [9, 0, 10, 2],
-        [9, 10, 0, 2],
-        [4, 2,  2, 0],
-    ],
-    colors=["#E53935", "#1E88E5", "#FB8C00", "#8E24AA"],
-    title="Season 1",
-)
-plt.show()-->
