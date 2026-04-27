@@ -121,3 +121,99 @@ body {
     text-align: center;
 
 }
+
+/* Swear Word Trendline Styles */
+.trendline-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.trendline-section .section-header {
+    color: #e63946;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.trendline-description {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#swear-trendline-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#swear-trendline-wrapper svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Swear Word Bar Chart Styles */
+.barchart-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.barchart-section .section-header {
+    color: #e63946;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.barchart-description {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-label {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.custom-dropdown {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid #e63946;
+    padding: 8px 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-dropdown option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.barchart-container {
+    width: 100%;
+    overflow-x: auto;
+}
