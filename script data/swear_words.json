@@ -1,0 +1,646 @@
+{
+  "netflix": {
+    "series": "Netflix",
+    "seasons": {
+      "s1": {
+        "episodes": {
+          "ep1": {
+            "total": 12,
+            "breakdown": {
+              "shit": 3,
+              "hell": 8,
+              "cock": 1
+            }
+          },
+          "ep2": {
+            "total": 12,
+            "breakdown": {
+              "shit": 2,
+              "damn": 2,
+              "hell": 7,
+              "crap": 1
+            }
+          },
+          "ep3": {
+            "total": 21,
+            "breakdown": {
+              "shit": 2,
+              "ass": 1,
+              "bitch": 1,
+              "hell": 14,
+              "crap": 1,
+              "dick": 1,
+              "son of a bitch": 1
+            }
+          },
+          "ep4": {
+            "total": 11,
+            "breakdown": {
+              "shit": 1,
+              "ass": 1,
+              "bitch": 1,
+              "bastard": 1,
+              "hell": 5,
+              "piss": 1,
+              "bullshit": 1
+            }
+          },
+          "ep5": {
+            "total": 21,
+            "breakdown": {
+              "shit": 6,
+              "damn": 2,
+              "bitch": 2,
+              "hell": 7,
+              "crap": 1,
+              "bullshit": 1,
+              "son of a bitch": 2
+            }
+          },
+          "ep6": {
+            "total": 31,
+            "breakdown": {
+              "shit": 5,
+              "ass": 1,
+              "bitch": 2,
+              "hell": 13,
+              "piss": 1,
+              "dick": 1,
+              "bullshit": 1,
+              "shitty": 1,
+              "asshole": 4,
+              "son of a bitch": 2
+            }
+          },
+          "ep7": {
+            "total": 28,
+            "breakdown": {
+              "shit": 8,
+              "damn": 1,
+              "ass": 5,
+              "bitch": 1,
+              "hell": 7,
+              "piss": 2,
+              "dick": 1,
+              "bullshit": 1,
+              "asshole": 2
+            }
+          },
+          "ep8": {
+            "total": 28,
+            "breakdown": {
+              "shit": 8,
+              "damn": 3,
+              "bitch": 2,
+              "bastard": 1,
+              "hell": 8,
+              "piss": 1,
+              "dick": 2,
+              "asshole": 1,
+              "son of a bitch": 2
+            }
+          },
+          "ep9": {
+            "total": 20,
+            "breakdown": {
+              "shit": 2,
+              "damn": 1,
+              "ass": 2,
+              "bastard": 1,
+              "hell": 10,
+              "bullshit": 2,
+              "goddamn": 1,
+              "asshole": 1
+            }
+          },
+          "ep10": {
+            "total": 33,
+            "breakdown": {
+              "shit": 6,
+              "damn": 6,
+              "ass": 4,
+              "hell": 13,
+              "crap": 1,
+              "bullshit": 2,
+              "god damn": 1
+            }
+          },
+          "ep11": {
+            "total": 27,
+            "breakdown": {
+              "shit": 6,
+              "damn": 4,
+              "bitch": 1,
+              "hell": 9,
+              "crap": 2,
+              "dick": 1,
+              "bullshit": 1,
+              "god damn": 1,
+              "asshole": 1,
+              "son of a bitch": 1
+            }
+          },
+          "ep12": {
+            "total": 17,
+            "breakdown": {
+              "shit": 5,
+              "damn": 2,
+              "hell": 6,
+              "piss": 1,
+              "dick": 1,
+              "shitty": 1,
+              "asshole": 1
+            }
+          },
+          "ep13": {
+            "total": 19,
+            "breakdown": {
+              "shit": 5,
+              "ass": 1,
+              "bitch": 2,
+              "hell": 7,
+              "asshole": 2,
+              "son of a bitch": 2
+            }
+          }
+        },
+        "total_swear_words": 280,
+        "swear_word_counts": {
+          "shit": 59,
+          "hell": 114,
+          "cock": 1,
+          "damn": 21,
+          "crap": 6,
+          "ass": 15,
+          "bitch": 12,
+          "dick": 7,
+          "son of a bitch": 10,
+          "bastard": 3,
+          "piss": 6,
+          "bullshit": 9,
+          "shitty": 2,
+          "asshole": 12,
+          "goddamn": 1,
+          "god damn": 2
+        }
+      },
+      "s2": {
+        "episodes": {
+          "ep1": {
+            "total": 50,
+            "breakdown": {
+              "shit": 14,
+              "damn": 2,
+              "ass": 4,
+              "hell": 17,
+              "piss": 3,
+              "dick": 1,
+              "goddamn": 2,
+              "god damn": 1,
+              "asshole": 6
+            }
+          },
+          "ep2": {
+            "total": 40,
+            "breakdown": {
+              "shit": 17,
+              "ass": 2,
+              "bastard": 1,
+              "hell": 15,
+              "crap": 2,
+              "goddamn": 1,
+              "asshole": 2
+            }
+          },
+          "ep3": {
+            "total": 60,
+            "breakdown": {
+              "fuck": 1,
+              "shit": 22,
+              "damn": 3,
+              "ass": 3,
+              "bitch": 3,
+              "hell": 11,
+              "bullshit": 3,
+              "goddamn": 7,
+              "god damn": 1,
+              "asshole": 4,
+              "son of a bitch": 2
+            }
+          },
+          "ep4": {
+            "total": 38,
+            "breakdown": {
+              "shit": 12,
+              "damn": 2,
+              "ass": 1,
+              "bitch": 2,
+              "bastard": 1,
+              "hell": 10,
+              "dick": 1,
+              "bullshit": 1,
+              "goddamn": 4,
+              "asshole": 2,
+              "son of a bitch": 2
+            }
+          },
+          "ep5": {
+            "total": 22,
+            "breakdown": {
+              "shit": 7,
+              "damn": 1,
+              "ass": 3,
+              "bitch": 2,
+              "hell": 3,
+              "piss": 2,
+              "shitty": 1,
+              "son of a bitch": 2,
+              "sob": 1
+            }
+          },
+          "ep6": {
+            "total": 17,
+            "breakdown": {
+              "shit": 6,
+              "ass": 3,
+              "bastard": 1,
+              "hell": 6,
+              "bullshit": 1
+            }
+          },
+          "ep7": {
+            "total": 29,
+            "breakdown": {
+              "shit": 7,
+              "damn": 3,
+              "ass": 1,
+              "hell": 11,
+              "bullshit": 2,
+              "goddamn": 2,
+              "god damn": 1,
+              "asshole": 2
+            }
+          },
+          "ep8": {
+            "total": 31,
+            "breakdown": {
+              "shit": 9,
+              "damn": 2,
+              "ass": 6,
+              "hell": 9,
+              "bullshit": 2,
+              "goddamn": 3
+            }
+          },
+          "ep9": {
+            "total": 24,
+            "breakdown": {
+              "shit": 8,
+              "damn": 1,
+              "ass": 1,
+              "bitch": 2,
+              "hell": 4,
+              "bullshit": 2,
+              "goddamn": 3,
+              "asshole": 2,
+              "son of a bitch": 1
+            }
+          },
+          "ep10": {
+            "total": 34,
+            "breakdown": {
+              "shit": 15,
+              "damn": 1,
+              "ass": 3,
+              "bitch": 1,
+              "hell": 9,
+              "dick": 1,
+              "bullshit": 1,
+              "god damn": 1,
+              "asshole": 1,
+              "son of a bitch": 1
+            }
+          },
+          "ep11": {
+            "total": 31,
+            "breakdown": {
+              "shit": 8,
+              "damn": 1,
+              "hell": 8,
+              "bullshit": 4,
+              "goddamn": 4,
+              "asshole": 6
+            }
+          },
+          "ep12": {
+            "total": 12,
+            "breakdown": {
+              "shit": 6,
+              "ass": 2,
+              "hell": 1,
+              "goddamn": 1,
+              "asshole": 2
+            }
+          },
+          "ep13": {
+            "total": 31,
+            "breakdown": {
+              "shit": 10,
+              "damn": 3,
+              "ass": 1,
+              "bitch": 1,
+              "hell": 9,
+              "bullshit": 2,
+              "goddamn": 2,
+              "asshole": 2,
+              "son of a bitch": 1
+            }
+          }
+        },
+        "total_swear_words": 419,
+        "swear_word_counts": {
+          "shit": 141,
+          "damn": 19,
+          "ass": 30,
+          "hell": 113,
+          "piss": 5,
+          "dick": 3,
+          "goddamn": 29,
+          "god damn": 4,
+          "asshole": 29,
+          "bastard": 3,
+          "crap": 2,
+          "fuck": 1,
+          "bitch": 11,
+          "bullshit": 18,
+          "son of a bitch": 9,
+          "shitty": 1,
+          "sob": 1
+        }
+      },
+      "s3": {
+        "episodes": {
+          "ep1": {
+            "total": 8,
+            "breakdown": {
+              "damn": 4,
+              "hell": 3,
+              "bullshit": 1
+            }
+          },
+          "ep2": {
+            "total": 14,
+            "breakdown": {
+              "damn": 4,
+              "hell": 3,
+              "crap": 3,
+              "bullshit": 2,
+              "god damn": 1,
+              "shitty": 1
+            }
+          },
+          "ep3": {
+            "total": 10,
+            "breakdown": {
+              "damn": 2,
+              "hell": 5,
+              "crap": 1,
+              "bullshit": 1,
+              "god damn": 1
+            }
+          },
+          "ep4": {
+            "total": 7,
+            "breakdown": {
+              "damn": 1,
+              "hell": 4,
+              "crap": 1,
+              "god damn": 1
+            }
+          },
+          "ep5": {
+            "total": 5,
+            "breakdown": {
+              "damn": 2,
+              "hell": 2,
+              "shitty": 1
+            }
+          },
+          "ep6": {
+            "total": 9,
+            "breakdown": {
+              "hell": 6,
+              "bullshit": 2,
+              "shitty": 1
+            }
+          },
+          "ep7": {
+            "total": 18,
+            "breakdown": {
+              "damn": 5,
+              "hell": 8,
+              "bullshit": 3,
+              "god damn": 2
+            }
+          },
+          "ep8": {
+            "total": 13,
+            "breakdown": {
+              "damn": 3,
+              "hell": 5,
+              "bullshit": 2,
+              "god damn": 3
+            }
+          },
+          "ep9": {
+            "total": 12,
+            "breakdown": {
+              "damn": 3,
+              "hell": 3,
+              "bullshit": 4,
+              "shitty": 2
+            }
+          },
+          "ep10": {
+            "total": 11,
+            "breakdown": {
+              "damn": 1,
+              "hell": 8,
+              "bullshit": 1,
+              "god damn": 1
+            }
+          },
+          "ep11": {
+            "total": 11,
+            "breakdown": {
+              "damn": 1,
+              "hell": 5,
+              "bullshit": 4,
+              "god damn": 1
+            }
+          },
+          "ep12": {
+            "total": 8,
+            "breakdown": {
+              "damn": 2,
+              "hell": 6
+            }
+          },
+          "ep13": {
+            "total": 11,
+            "breakdown": {
+              "damn": 1,
+              "hell": 7,
+              "piss": 1,
+              "bullshit": 1,
+              "shitty": 1
+            }
+          }
+        },
+        "total_swear_words": 137,
+        "swear_word_counts": {
+          "damn": 29,
+          "hell": 65,
+          "bullshit": 21,
+          "crap": 5,
+          "god damn": 10,
+          "shitty": 6,
+          "piss": 1
+        }
+      }
+    }
+  },
+  "born_again": {
+    "series": "Born Again",
+    "seasons": {
+      "s1": {
+        "episodes": {
+          "ep1": {
+            "total": 11,
+            "breakdown": {
+              "hell": 11
+            }
+          },
+          "ep2": {
+            "total": 3,
+            "breakdown": {
+              "crap": 1,
+              "bullshit": 2
+            }
+          },
+          "ep3": {
+            "total": 3,
+            "breakdown": {
+              "hell": 1,
+              "bullshit": 1,
+              "shitty": 1
+            }
+          },
+          "ep4": {
+            "total": 5,
+            "breakdown": {
+              "damn": 1,
+              "hell": 1,
+              "crap": 2,
+              "bullshit": 1
+            }
+          },
+          "ep5": {
+            "total": 6,
+            "breakdown": {
+              "hell": 6
+            }
+          },
+          "ep6": {
+            "total": 2,
+            "breakdown": {
+              "damn": 1,
+              "hell": 1
+            }
+          },
+          "ep7": {
+            "total": 7,
+            "breakdown": {
+              "hell": 4,
+              "bullshit": 2,
+              "shitty": 1
+            }
+          },
+          "ep8": {
+            "total": 6,
+            "breakdown": {
+              "hell": 4,
+              "fucker": 1,
+              "bullshit": 1
+            }
+          },
+          "ep9": {
+            "total": 5,
+            "breakdown": {
+              "hell": 2,
+              "crap": 1,
+              "piss": 1,
+              "bullshit": 1
+            }
+          }
+        },
+        "total_swear_words": 48,
+        "swear_word_counts": {
+          "hell": 30,
+          "crap": 4,
+          "bullshit": 8,
+          "shitty": 2,
+          "damn": 2,
+          "fucker": 1,
+          "piss": 1
+        }
+      },
+      "s2": {
+        "episodes": {
+          "ep1": {
+            "total": 4,
+            "breakdown": {
+              "damn": 1,
+              "hell": 3
+            }
+          },
+          "ep2": {
+            "total": 5,
+            "breakdown": {
+              "hell": 4,
+              "bullshit": 1
+            }
+          },
+          "ep3": {
+            "total": 6,
+            "breakdown": {
+              "hell": 4,
+              "bullshit": 2
+            }
+          },
+          "ep4": {
+            "total": 2,
+            "breakdown": {
+              "hell": 1,
+              "bullshit": 1
+            }
+          },
+          "ep5": {
+            "total": 5,
+            "breakdown": {
+              "damn": 1,
+              "hell": 3,
+              "bullshit": 1
+            }
+          }
+        },
+        "total_swear_words": 22,
+        "swear_word_counts": {
+          "damn": 2,
+          "hell": 15,
+          "bullshit": 5
+        }
+      }
+    }
+  }
+}
