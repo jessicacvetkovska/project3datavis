@@ -22,7 +22,7 @@ def analyze_religious_themes(base_dir):
     ]
 
     # Compile a case-insensitive regex to match whole words only
-    # \b makes sure we match "devil" but not "daredevil"
+    # \b makes sure to match "devil" but not "daredevil"
     pattern = re.compile(r'\b(?:' + '|'.join(KEYWORDS) + r')\b', re.IGNORECASE)
 
     trend_data = []
@@ -35,7 +35,7 @@ def analyze_religious_themes(base_dir):
             print(f"Skipping {dir_path} - directory not found.")
             continue
 
-        # Get all text files and sort them numerically by episode (ep1.txt, ep2.txt, etc.)
+        # Get all text files and sort them numerically by episode
         files = [f for f in os.listdir(dir_path) if f.startswith('ep') and f.endswith('.txt')]
         files.sort(key=lambda x: int(re.search(r'\d+', x).group()))
 
@@ -44,7 +44,7 @@ def analyze_religious_themes(base_dir):
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # Find all occurrences of the keywords
+            # Find all occurrences of keywords
             matches = pattern.findall(content)
             total_count = len(matches)
 
@@ -52,7 +52,7 @@ def analyze_religious_themes(base_dir):
             ep_num = int(re.search(r'\d+', filename).group())
             season_num = int(re.search(r'\d+', season).group())
             
-            # Create a clean label for your D3 tooltips/axes
+            # Create label for D3 tooltips/axes
             series_abbr = "Net" if series == "netflix" else "BA"
             label = f"{series_abbr} S{season_num}:E{ep_num}"
 
@@ -67,7 +67,7 @@ def analyze_religious_themes(base_dir):
 
             global_episode_counter += 1
 
-    # Save output to your script data folder
+    # Save output to script data folder
     output_path = os.path.join(base_dir, "script data", "religious_themes.json")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
@@ -78,5 +78,4 @@ def analyze_religious_themes(base_dir):
     print(f"Data saved to {output_path}")
 
 if __name__ == "__main__":
-    # Assumes the script is executed from the 'Project 3' root directory
     analyze_religious_themes(".")
