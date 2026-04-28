@@ -7,14 +7,14 @@ def update_season_appearances(directory_path, character_list, prefix, output_fil
     Scans a season directory and appends prefixed results to a central JSON.
     Example Prefix: 'netflix_s1' or 'ba_s2'
     """
-    # 1. Load existing data or start fresh
+    # Load existing data or create new file
     if os.path.exists(output_file):
         with open(output_file, 'r', encoding='utf-8') as f:
             all_data = json.load(f)
     else:
         all_data = {}
 
-    # 2. Calculate counts for THIS specific season
+    # Calculate counts for specific season
     season_counts = {char: 0 for char in character_list}
     
     try:
@@ -39,24 +39,22 @@ def update_season_appearances(directory_path, character_list, prefix, output_fil
                 if found:
                     season_counts[char_full_name] += 1
 
-    # 3. Add to the main dictionary with the prefix
+    # Add to the main dictionary with prefix
     # Format: "netflix_s1_Matt Murdock / Daredevil"
     for char, count in season_counts.items():
         unique_key = f"{prefix}_{char}"
         all_data[unique_key] = count
 
-    # 4. Save the expanded dataset
+    # Save expanded dataset
     with open(output_file, 'w', encoding='utf-8') as jf:
         json.dump(all_data, jf, indent=4)
     
     print(f"Successfully appended {prefix} data to {output_file}.")
 
-# --- CONFIGURATION ---
-# Just update these two variables for each run
 current_season_dir = "../Project 3/born again/season 2" 
 current_prefix = "ba_s2" 
 
-# Characters from your established cast list
+# Characters from cast list
 character_list = [
     "Matt", "Foggy", "Karen", 
     "Fisk", "BB", "Poindexter", "Kirsten", 
