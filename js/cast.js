@@ -1,4 +1,4 @@
-// Starring cast data (no prefix = netflix, ba = born again)
+// 1. Organize your data
 const castData = {
     "s1": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt.jpg" },
@@ -41,7 +41,8 @@ const castData = {
         { name: "Benjamin Poindexter / Bullseye", actor: "Wilson Bethel", img: "./images/bullseye2.png" },
         { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
         { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" },
-        { name: "Daniel Blade", actor: "Michael Gandolfini", img: "./images/blade.jpg" }
+        { name: "Daniel Blake", actor: "Michael Gandolfini", img: "./images/blade.jpg" },
+        { name: "Officer Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
     ],
     "ba2": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt2.jpg" },
@@ -55,28 +56,37 @@ const castData = {
         { name: "Buck Cashman", actor: "Arty Froushan", img: "./images/buck.jpg" },
         { name: "BB Urich", actor: "Genneya Walton", img: "./images/bb_urich.jpg" },
         { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
-        { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" }
+        { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" },
+        { name: "Officer Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
     ]
 };
 
-// Renders cast cards
-function renderCast(seasonKey, wrapperID) {
+// Tooltip for the character cards
+const cardTooltip = d3.select("body").append("div")
+    .attr("class", "tooltip") // Uses the style already in your cast-style.css
+    .style("opacity", 0);
+
+// 2. The function to render cards
+function renderCast(seasonKey, wrapperID, dialogueData) {
     const data = castData[seasonKey];
     const wrapper = d3.select(wrapperID);
-
+    
+    // Helper for percentage formatting (0.2845 -> 28.5%)
+    const formatPercent = d3.format(".1%");
+    
     wrapper.selectAll(".character-card")
         .data(data)
         .join(
             enter => {
                 const card = enter.append("div").attr("class", "character-card");
-                // Set up image
+                
                 card.append("div").attr("class", "character-image-placeholder")
                     .append("img")
                     .attr("src", d => d.img)
                     .style("width", "100%")
                     .style("height", "100%")
                     .style("object-fit", "cover");
-                // Set up character and actor
+
                 const info = card.append("div").attr("class", "character-info");
                 info.append("div").attr("class", "character-name").text(d => d.name);
                 info.append("div").attr("class", "actor-name").text(d => d.actor);
@@ -89,18 +99,56 @@ function renderCast(seasonKey, wrapperID) {
                 return update;
             },
             exit => exit.remove()
-        );
+        )
+        .on("mouseover", function(event, d) {
+            // Match the key format in JSON: prefix_FullName
+            let cleanName = d.name.split(' / ')[0];
+
+            // Second, handle specific inconsistencies between castData and JSON keys
+            if (cleanName === "Sister Maggie Grace") cleanName = "Sister Maggie";
+            if (cleanName.includes("Ray") && cleanName.includes("Nadeem")) cleanName = "Ray Nadeem";
+            if (cleanName === "Wilson Fisk / Kingpin") cleanName = "Wilson Fisk"; // Safety for BA seasons
+            if (cleanName === "Vanessa Fisk") cleanName = "Vanessa Marianna"; // Safety for BA seasons
+            
+            const lookupKey = `${seasonKey}_${cleanName}`;
+            const dialogueVal = dialogueData[lookupKey] || 0;
+
+            // Transition animation
+            cardTooltip.transition().duration(200).style("opacity", 1);
+            // Display percentage of season dialogue
+            cardTooltip.html(`
+                <strong>${d.name}</strong><br/>
+                ${formatPercent(dialogueVal)} of Season Dialogue
+            `)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mousemove", function(event) {
+            cardTooltip.style("left", (event.pageX + 10) + "px")
+                       .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            cardTooltip.transition().duration(500).style("opacity", 0);
+        });
 }
 
-// Listeners for both dropdowns
-d3.select("#netflix-dropdown").on("change", function(event) {
-    renderCast(event.target.value, "#netflix-cast-wrapper");
-});
+document.addEventListener('DOMContentLoaded', function() {
+    // Load your data files simultaneously
+    Promise.all([
+        d3.json("script data/dialogue_percentages.json")
+    ]).then(([dialogueData]) => {
+        
+        // Re-render when dropdowns change
+        d3.select("#netflix-dropdown").on("change", function(event) {
+            renderCast(event.target.value, "#netflix-cast-wrapper", dialogueData);
+        });
 
-d3.select("#ba-dropdown").on("change", function(event) {
-    renderCast(event.target.value, "#ba-cast-wrapper");
-});
+        d3.select("#ba-dropdown").on("change", function(event) {
+            renderCast(event.target.value, "#ba-cast-wrapper", dialogueData);
+        });
+        // Initial load for both sections
+        renderCast("s1", "#netflix-cast-wrapper", dialogueData);
+        renderCast("ba1", "#ba-cast-wrapper", dialogueData);
 
-// Initial load for both sections
-renderCast("s1", "#netflix-cast-wrapper");
-renderCast("ba1", "#ba-cast-wrapper");
+    }).catch(err => console.error("Error loading dialogue data:", err));
+});
