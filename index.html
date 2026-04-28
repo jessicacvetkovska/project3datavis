@@ -27,7 +27,7 @@
             character, the show first aired on Netflix in April 2015 and continued successfully for 3 seasons into 2018 as a loose tie-in to the larger Marvel Cinematic Universe. 
             However, it was cancelled in November 2018 due to strained relations between Disney and Netflix as Disney+ was soon to launch at the time. Thankfully, the series was revived on Disney+ in March 2025, 
             retitled to Daredevil: Born Again that has run just as successfully for 2 seasons so far with stronger ties to the MCU. This page analyzes both shows in how the story, character interactions, 
-            and scripts have changed through all episodes up to s2 x ep5 since it's ongoing at the time of developing the site.
+            and scripts have changed through all episodes up to s2 x ep6 since it's ongoing at the time of developing the site.
         </div>
 
         <div class="cast-section" id="netflix-cast-section">
@@ -88,18 +88,20 @@
     <img src="./images/dd_logo.png" class="netflix-logo">
     <img src="./images/born again logo.webp" class="born-again-logo">
     
+    <!-- JS Scripts -->
     <script src="js/d3.v6.min.js"></script>
     <script src="js/cast.js"></script>
     <script src="js/pie-chart.js"></script>
     <script src="js/chord_graph.js"></script>
     <script src="js/swear_word_trendline.js"></script>
     <script src="js/swear_word_barchart.js"></script>
+    <script src="js/religious_trendline.js"></script>
 
     <script>
         //plan here is to hardcode the info for season 1, 2, and 3. Potentially Born Again.
         drawChordDiagram({
         container: "#my-chord-div",
-        labels: ["Matt Murdock", "Foggy Nelson", "Karen Page", "Wilson Fisk", "James Wesley", "Ben Ulrich", "Leland Owlsley", "Vanessa Marianna", "Claire Temple"],
+        labels: ["Matt Murdock", "Foggy Nelson", "Karen Page", "Wilson Fisk", "James Wesley", "Ben Urich", "Leland Owlsley", "Vanessa Marianna", "Claire Temple"],
         matrix: [
             [0, 13, 13, 10, 10, 9, 9, 6, 4],//matt
             [13, 0, 13, 10, 10, 9, 9, 6, 4],//foggy
