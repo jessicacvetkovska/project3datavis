@@ -37,6 +37,7 @@ const castData = {
         { name: "Wilson Fisk / Kingpin", actor: "Vincent D'Onofrio", img: "./images/kingpin2.jpg" },
         { name: "Frank Castle / Punisher", actor: "Jon Bernthal", img: "./images/punisher2.jpg" },
         { name: "Karen Page", actor: "Deborah Ann Woll", img: "./images/karen2.jpg" },
+        { name: "BB Urich", actor: "Genneya Walton", img: "./images/bb_urich.jpg" },
         { name: "Foggy Nelson", actor: "Elden Henson", img: "./images/foggy2.jpg" },
         { name: "Benjamin Poindexter / Bullseye", actor: "Wilson Bethel", img: "./images/bullseye2.png" },
         { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
