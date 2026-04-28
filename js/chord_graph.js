@@ -16,7 +16,7 @@
 const chordTooltip = d3.select("body").selectAll(".chord-tooltip")
     .data([null])
     .join("div")
-    .attr("class", "tooltip chord-tooltip") // Reuses your existing .tooltip styles
+    .attr("class", "tooltip chord-tooltip")
     .style("opacity", 0)
     .style("position", "absolute")
     .style("pointer-events", "none")
