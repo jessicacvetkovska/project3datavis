@@ -9,7 +9,7 @@ const castData = {
         { name: "Leland Owlsley", actor: "Bob Gunton", img: "./images/leland.jpg" },
         { name: "Vanessa Marianna", actor: "Ayelet Zurer", img: "./images/vanessa.jpg" },
         { name: "Claire Temple", actor: "Rosario Dawson", img: "./images/claire.jpg" },
-        { name: "Wilson Fisk", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
+        { name: "Wilson Fisk / Kingpin", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
     ],
     "s2": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt.jpg" },
@@ -19,7 +19,7 @@ const castData = {
         { name: "Elektra Natchios", actor: "Elodie Yung", img: "./images/elektra.jpg" },
         { name: "Blake Tower", actor: "Stephen Rider", img: "./images/blake.webp" },
         { name: "Claire Temple", actor: "Rosario Dawson", img: "./images/claire.jpg" },
-        { name: "Wilson Fisk", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
+        { name: "Wilson Fisk / Kingpin", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
     ],
     "s3": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt.jpg" },
@@ -30,7 +30,7 @@ const castData = {
         { name: "Rahul \"Ray\" Nadeem", actor: "Jay Ali", img: "./images/ray.webp" },
         { name: "Blake Tower", actor: "Stephen Rider", img: "./images/blake.webp" },
         { name: "Vanessa Marianna", actor: "Ayelet Zurer", img: "./images/vanessa.jpg" },
-        { name: "Wilson Fisk", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
+        { name: "Wilson Fisk / Kingpin", actor: "Vincent D'Onofrio", img: "./images/kingpin.jpg" }
     ],
     "ba1": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt2.jpg" },
