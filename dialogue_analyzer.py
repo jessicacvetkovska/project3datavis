@@ -3,7 +3,7 @@ import re
 import json
 
 def calculate_dialogue_percentages(base_dir):
-    # Map full names to the exact first names or aliases used in the script labels
+    # Map full names to the exact first names/alias used in the script labels
     character_map = {
         "Matt Murdock": ["Matt", "Daredevil"],
         "Foggy Nelson": ["Foggy"],
@@ -47,7 +47,7 @@ def calculate_dialogue_percentages(base_dir):
             print(f"Skipping {dir_path} - directory not found.")
             continue
 
-        # Track line counts for this specific season
+        # Track line counts for specific season
         season_counts = {char: 0 for char in character_map.keys()}
         total_season_dialogue = 0
 
@@ -72,12 +72,12 @@ def calculate_dialogue_percentages(base_dir):
         # Convert raw counts to decimal percentages
         for char_full, count in season_counts.items():
             if total_season_dialogue > 0:
-                # Calculate the percentage and round to 4 decimal places (e.g., 0.1452)
+                # Calculate the percentage and round to 4 decimal places
                 percentage = round(count / total_season_dialogue, 4)
             else:
                 percentage = 0.0
             
-            # Only save characters that actually spoke in this season to keep the JSON clean
+            # Only save characters that actually spoke in this season to keep JSON clean
             if percentage > 0:
                 unique_key = f"{prefix}_{char_full}"
                 dialogue_percentages[unique_key] = percentage
