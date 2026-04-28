@@ -260,3 +260,7 @@ body {
     r: 10; /* Enlarge slightly on hover */
     fill: #ffd700; /* Flash gold/yellow to indicate interactivity */
 }
+
+.ribbon {
+    transition: fill-opacity 0.2s ease;
+}
