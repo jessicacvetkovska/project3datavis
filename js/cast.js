@@ -1,4 +1,4 @@
-// 1. Organize your data
+// Organize cast data
 const castData = {
     "s1": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt.jpg" },
@@ -67,15 +67,15 @@ const castData = {
 
 // Tooltip for the character cards
 const cardTooltip = d3.select("body").append("div")
-    .attr("class", "tooltip") // Uses the style already in your cast-style.css
+    .attr("class", "tooltip")
     .style("opacity", 0);
 
-// 2. The function to render cards
+// Render cards
 function renderCast(seasonKey, wrapperID, dialogueData) {
     const data = castData[seasonKey];
     const wrapper = d3.select(wrapperID);
     
-    // Helper for percentage formatting (0.2845 -> 28.5%)
+    // Helper for percentage formatting
     const formatPercent = d3.format(".1%");
     
     wrapper.selectAll(".character-card")
@@ -108,7 +108,7 @@ function renderCast(seasonKey, wrapperID, dialogueData) {
             // Match the key format in JSON: prefix_FullName
             let cleanName = d.name.split(' / ')[0];
 
-            // Second, handle specific inconsistencies between castData and JSON keys
+            // Handle specific inconsistencies between castData and JSON keys
             if (cleanName === "Sister Maggie Grace") cleanName = "Sister Maggie";
             if (cleanName.includes("Ray") && cleanName.includes("Nadeem")) cleanName = "Ray Nadeem";
             if (cleanName === "Wilson Fisk / Kingpin") cleanName = "Wilson Fisk"; // Safety for BA seasons
@@ -138,7 +138,7 @@ function renderCast(seasonKey, wrapperID, dialogueData) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load your data files simultaneously
+    // Load data files simultaneously
     Promise.all([
         d3.json("script data/dialogue_percentages.json")
     ]).then(([dialogueData]) => {
