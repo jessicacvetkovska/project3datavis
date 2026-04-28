@@ -95,8 +95,8 @@ function drawChordDiagram({ container, labels, matrix, colors, title = "" }) {
       .attr("x", cx)
       .attr("y", height - 8)
       .attr("text-anchor", "middle")
-      .attr("fill",        "#666")
-      .attr("font-size",   "10px")
+      .attr("fill",        "#ffffff")
+      .attr("font-size",   "18px")
       .attr("font-family", "monospace")
       .text(title);
   }
