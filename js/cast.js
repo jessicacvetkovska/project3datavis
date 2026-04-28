@@ -39,18 +39,21 @@ const castData = {
         { name: "Karen Page", actor: "Deborah Ann Woll", img: "./images/karen2.jpg" },
         { name: "BB Urich", actor: "Genneya Walton", img: "./images/bb_urich.jpg" },
         { name: "Foggy Nelson", actor: "Elden Henson", img: "./images/foggy2.jpg" },
+        { name: "Jacques Duquesne / Swordsman", actor: "Tony Dalton", img: "./images/swordsman.jpg" },
         { name: "Benjamin Poindexter / Bullseye", actor: "Wilson Bethel", img: "./images/bullseye2.png" },
         { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
+        { name: "Buck Cashman", actor: "Arty Froushan", img: "./images/buck.jpg" },
+        { name: "Kirsten McDuffie", actor: "Nikki M. James", img: "./images/kirsten.jpg" },
         { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" },
         { name: "Daniel Blake", actor: "Michael Gandolfini", img: "./images/blade.jpg" },
-        { name: "Officer Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
+        { name: "Officer Connor Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
     ],
     "ba2": [
         { name: "Matt Murdock / Daredevil", actor: "Charlie Cox", img: "./images/matt2.jpg" },
         { name: "Wilson Fisk / Kingpin", actor: "Vincent D'Onofrio", img: "./images/kingpin2.jpg" },
         { name: "Karen Page", actor: "Deborah Ann Woll", img: "./images/karen2.jpg" },
         { name: "Jessica Jones", actor: "Krysten Ritter", img: "./images/jessica.jpg" },
-        { name: "Jacques Duquesne", actor: "Tony Dalton", img: "./images/swordsman.jpg" },
+        { name: "Jacques Duquesne / Swordsman", actor: "Tony Dalton", img: "./images/swordsman.jpg" },
         { name: "Daniel Blake", actor: "Michael Gandolfini", img: "./images/blade.jpg" },
         { name: "Kirsten McDuffie", actor: "Nikki M. James", img: "./images/kirsten.jpg" },
         { name: "Benjamin Poindexter / Bullseye", actor: "Wilson Bethel", img: "./images/bullseye2.png" },
@@ -58,7 +61,7 @@ const castData = {
         { name: "BB Urich", actor: "Genneya Walton", img: "./images/bb_urich.jpg" },
         { name: "Vanessa Fisk", actor: "Ayelet Zurer", img: "./images/vanessa2.jpg" },
         { name: "Heather Glenn", actor: "Margarita Levieva", img: "./images/heather.jpg" },
-        { name: "Officer Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
+        { name: "Officer Connor Powell", actor: "Hamish Allan-Headley", img: "./images/powell.jpg" }
     ]
 };
 
@@ -110,6 +113,7 @@ function renderCast(seasonKey, wrapperID, dialogueData) {
             if (cleanName.includes("Ray") && cleanName.includes("Nadeem")) cleanName = "Ray Nadeem";
             if (cleanName === "Wilson Fisk / Kingpin") cleanName = "Wilson Fisk"; // Safety for BA seasons
             if (cleanName === "Vanessa Fisk") cleanName = "Vanessa Marianna"; // Safety for BA seasons
+            if (cleanName === "Officer Connor Powell") cleanName = "Officer Powell"; // Safety for BA seasons
             
             const lookupKey = `${seasonKey}_${cleanName}`;
             const dialogueVal = dialogueData[lookupKey] || 0;
