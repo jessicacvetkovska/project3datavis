@@ -1,0 +1,434 @@
+[
+    {
+        "absolute_episode": 1,
+        "label": "Net S1:E1",
+        "series": "netflix",
+        "season": 1,
+        "episode": 1,
+        "theme_count": 23
+    },
+    {
+        "absolute_episode": 2,
+        "label": "Net S1:E2",
+        "series": "netflix",
+        "season": 1,
+        "episode": 2,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 3,
+        "label": "Net S1:E3",
+        "series": "netflix",
+        "season": 1,
+        "episode": 3,
+        "theme_count": 28
+    },
+    {
+        "absolute_episode": 4,
+        "label": "Net S1:E4",
+        "series": "netflix",
+        "season": 1,
+        "episode": 4,
+        "theme_count": 12
+    },
+    {
+        "absolute_episode": 5,
+        "label": "Net S1:E5",
+        "series": "netflix",
+        "season": 1,
+        "episode": 5,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 6,
+        "label": "Net S1:E6",
+        "series": "netflix",
+        "season": 1,
+        "episode": 6,
+        "theme_count": 18
+    },
+    {
+        "absolute_episode": 7,
+        "label": "Net S1:E7",
+        "series": "netflix",
+        "season": 1,
+        "episode": 7,
+        "theme_count": 21
+    },
+    {
+        "absolute_episode": 8,
+        "label": "Net S1:E8",
+        "series": "netflix",
+        "season": 1,
+        "episode": 8,
+        "theme_count": 20
+    },
+    {
+        "absolute_episode": 9,
+        "label": "Net S1:E9",
+        "series": "netflix",
+        "season": 1,
+        "episode": 9,
+        "theme_count": 32
+    },
+    {
+        "absolute_episode": 10,
+        "label": "Net S1:E10",
+        "series": "netflix",
+        "season": 1,
+        "episode": 10,
+        "theme_count": 22
+    },
+    {
+        "absolute_episode": 11,
+        "label": "Net S1:E11",
+        "series": "netflix",
+        "season": 1,
+        "episode": 11,
+        "theme_count": 32
+    },
+    {
+        "absolute_episode": 12,
+        "label": "Net S1:E12",
+        "series": "netflix",
+        "season": 1,
+        "episode": 12,
+        "theme_count": 14
+    },
+    {
+        "absolute_episode": 13,
+        "label": "Net S1:E13",
+        "series": "netflix",
+        "season": 1,
+        "episode": 13,
+        "theme_count": 25
+    },
+    {
+        "absolute_episode": 14,
+        "label": "Net S2:E1",
+        "series": "netflix",
+        "season": 2,
+        "episode": 1,
+        "theme_count": 32
+    },
+    {
+        "absolute_episode": 15,
+        "label": "Net S2:E2",
+        "series": "netflix",
+        "season": 2,
+        "episode": 2,
+        "theme_count": 23
+    },
+    {
+        "absolute_episode": 16,
+        "label": "Net S2:E3",
+        "series": "netflix",
+        "season": 2,
+        "episode": 3,
+        "theme_count": 26
+    },
+    {
+        "absolute_episode": 17,
+        "label": "Net S2:E4",
+        "series": "netflix",
+        "season": 2,
+        "episode": 4,
+        "theme_count": 30
+    },
+    {
+        "absolute_episode": 18,
+        "label": "Net S2:E5",
+        "series": "netflix",
+        "season": 2,
+        "episode": 5,
+        "theme_count": 19
+    },
+    {
+        "absolute_episode": 19,
+        "label": "Net S2:E6",
+        "series": "netflix",
+        "season": 2,
+        "episode": 6,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 20,
+        "label": "Net S2:E7",
+        "series": "netflix",
+        "season": 2,
+        "episode": 7,
+        "theme_count": 23
+    },
+    {
+        "absolute_episode": 21,
+        "label": "Net S2:E8",
+        "series": "netflix",
+        "season": 2,
+        "episode": 8,
+        "theme_count": 19
+    },
+    {
+        "absolute_episode": 22,
+        "label": "Net S2:E9",
+        "series": "netflix",
+        "season": 2,
+        "episode": 9,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 23,
+        "label": "Net S2:E10",
+        "series": "netflix",
+        "season": 2,
+        "episode": 10,
+        "theme_count": 25
+    },
+    {
+        "absolute_episode": 24,
+        "label": "Net S2:E11",
+        "series": "netflix",
+        "season": 2,
+        "episode": 11,
+        "theme_count": 18
+    },
+    {
+        "absolute_episode": 25,
+        "label": "Net S2:E12",
+        "series": "netflix",
+        "season": 2,
+        "episode": 12,
+        "theme_count": 5
+    },
+    {
+        "absolute_episode": 26,
+        "label": "Net S2:E13",
+        "series": "netflix",
+        "season": 2,
+        "episode": 13,
+        "theme_count": 22
+    },
+    {
+        "absolute_episode": 27,
+        "label": "Net S3:E1",
+        "series": "netflix",
+        "season": 3,
+        "episode": 1,
+        "theme_count": 35
+    },
+    {
+        "absolute_episode": 28,
+        "label": "Net S3:E2",
+        "series": "netflix",
+        "season": 3,
+        "episode": 2,
+        "theme_count": 37
+    },
+    {
+        "absolute_episode": 29,
+        "label": "Net S3:E3",
+        "series": "netflix",
+        "season": 3,
+        "episode": 3,
+        "theme_count": 20
+    },
+    {
+        "absolute_episode": 30,
+        "label": "Net S3:E4",
+        "series": "netflix",
+        "season": 3,
+        "episode": 4,
+        "theme_count": 8
+    },
+    {
+        "absolute_episode": 31,
+        "label": "Net S3:E5",
+        "series": "netflix",
+        "season": 3,
+        "episode": 5,
+        "theme_count": 2
+    },
+    {
+        "absolute_episode": 32,
+        "label": "Net S3:E6",
+        "series": "netflix",
+        "season": 3,
+        "episode": 6,
+        "theme_count": 16
+    },
+    {
+        "absolute_episode": 33,
+        "label": "Net S3:E7",
+        "series": "netflix",
+        "season": 3,
+        "episode": 7,
+        "theme_count": 21
+    },
+    {
+        "absolute_episode": 34,
+        "label": "Net S3:E8",
+        "series": "netflix",
+        "season": 3,
+        "episode": 8,
+        "theme_count": 10
+    },
+    {
+        "absolute_episode": 35,
+        "label": "Net S3:E9",
+        "series": "netflix",
+        "season": 3,
+        "episode": 9,
+        "theme_count": 22
+    },
+    {
+        "absolute_episode": 36,
+        "label": "Net S3:E10",
+        "series": "netflix",
+        "season": 3,
+        "episode": 10,
+        "theme_count": 27
+    },
+    {
+        "absolute_episode": 37,
+        "label": "Net S3:E11",
+        "series": "netflix",
+        "season": 3,
+        "episode": 11,
+        "theme_count": 30
+    },
+    {
+        "absolute_episode": 38,
+        "label": "Net S3:E12",
+        "series": "netflix",
+        "season": 3,
+        "episode": 12,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 39,
+        "label": "Net S3:E13",
+        "series": "netflix",
+        "season": 3,
+        "episode": 13,
+        "theme_count": 30
+    },
+    {
+        "absolute_episode": 40,
+        "label": "BA S1:E1",
+        "series": "born again",
+        "season": 1,
+        "episode": 1,
+        "theme_count": 35
+    },
+    {
+        "absolute_episode": 41,
+        "label": "BA S1:E2",
+        "series": "born again",
+        "season": 1,
+        "episode": 2,
+        "theme_count": 9
+    },
+    {
+        "absolute_episode": 42,
+        "label": "BA S1:E3",
+        "series": "born again",
+        "season": 1,
+        "episode": 3,
+        "theme_count": 7
+    },
+    {
+        "absolute_episode": 43,
+        "label": "BA S1:E4",
+        "series": "born again",
+        "season": 1,
+        "episode": 4,
+        "theme_count": 18
+    },
+    {
+        "absolute_episode": 44,
+        "label": "BA S1:E5",
+        "series": "born again",
+        "season": 1,
+        "episode": 5,
+        "theme_count": 24
+    },
+    {
+        "absolute_episode": 45,
+        "label": "BA S1:E6",
+        "series": "born again",
+        "season": 1,
+        "episode": 6,
+        "theme_count": 11
+    },
+    {
+        "absolute_episode": 46,
+        "label": "BA S1:E7",
+        "series": "born again",
+        "season": 1,
+        "episode": 7,
+        "theme_count": 9
+    },
+    {
+        "absolute_episode": 47,
+        "label": "BA S1:E8",
+        "series": "born again",
+        "season": 1,
+        "episode": 8,
+        "theme_count": 18
+    },
+    {
+        "absolute_episode": 48,
+        "label": "BA S1:E9",
+        "series": "born again",
+        "season": 1,
+        "episode": 9,
+        "theme_count": 13
+    },
+    {
+        "absolute_episode": 49,
+        "label": "BA S2:E1",
+        "series": "born again",
+        "season": 2,
+        "episode": 1,
+        "theme_count": 15
+    },
+    {
+        "absolute_episode": 50,
+        "label": "BA S2:E2",
+        "series": "born again",
+        "season": 2,
+        "episode": 2,
+        "theme_count": 9
+    },
+    {
+        "absolute_episode": 51,
+        "label": "BA S2:E3",
+        "series": "born again",
+        "season": 2,
+        "episode": 3,
+        "theme_count": 10
+    },
+    {
+        "absolute_episode": 52,
+        "label": "BA S2:E4",
+        "series": "born again",
+        "season": 2,
+        "episode": 4,
+        "theme_count": 16
+    },
+    {
+        "absolute_episode": 53,
+        "label": "BA S2:E5",
+        "series": "born again",
+        "season": 2,
+        "episode": 5,
+        "theme_count": 20
+    },
+    {
+        "absolute_episode": 54,
+        "label": "BA S2:E6",
+        "series": "born again",
+        "season": 2,
+        "episode": 6,
+        "theme_count": 16
+    }
+]
